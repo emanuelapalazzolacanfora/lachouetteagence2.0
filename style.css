@@ -73,11 +73,10 @@ blockquote>footer {
 /* Titre */
 
 h1 {
-	margin:0;
  font-family: "Kingthings Petrock light";
  font-size:1.5em; 
 }
-h1 {
+h1, .h1 {
 	margin:0;
 }
 
