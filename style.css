@@ -1,7 +1,6 @@
 @font-face {
  font-family: "Kingthings Petrock light";
     src: url('kingthings-petrock-light-webfont.woff2') format('woff2'),
-         url('kingthings-petrock-light-webfont.woff') format('woff')
         url("/fonts/Kingthings-Petrock-light.svg") format("svg");
 }
 
@@ -62,7 +61,7 @@ blockquote>footer {
     font-weight: 900;
 }
 .bold-link {
-    text-decoration: underc!important;
+    text-decoration: underline!important;
 }
 
 .bold-link:focus {
@@ -498,7 +497,6 @@ nav .caret {
 .btn-d:hover,
 .btn-d:focus {
     background: rgba(0, 0, 0, .3);
-    border: solid 2px rgba(0, 0, 0, .3);
 }
 
 button {
@@ -661,7 +659,7 @@ a[data-lightbox]:hover img {
     z-index: 20;
     background: rgba(0, 0, 0, .5);
     border: none;
-    line-height: ;
+    line-height: 1.875em;
     padding: 0 9px 5px;
     opacity: 0.3;
 }
@@ -790,6 +788,65 @@ a[data-lightbox]:hover img {
     background-image: url("img/image-de-presentation-min.jpg");
 }
 
+@media (max-width: 1366px) {
+	    .b-parallax {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bloc {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .bloc.full-width-bloc,
+    .bloc-tile-2.full-width-bloc .container,
+    .bloc-tile-3.full-width-bloc .container,
+    .bloc-tile-4.full-width-bloc .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+	
+	    .b-parallax {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        width: 100%;
+    }
+    .b-parallax {
+        background-attachment: scroll;
+    }
+    .main,
+    #hero-bloc {
+        overflow-x: hidden;
+        position: relative;
+    }
+    .bloc-group,
+    .bloc-group .bloc {
+        display: block;
+        width: 100%;
+    }
+    .bloc-fill-screen .fill-bloc-top-edge,
+    .bloc-fill-screen .fill-bloc-bottom-edge {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .navbar .nav {
+        max-width: 80%
+    }
+    .nav-center.navbar .nav {
+        max-width: 100%
+    }
+	    .b-parallax {
+        background-attachment: scroll;
+    }
+}
+
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
@@ -828,72 +885,6 @@ a[data-lightbox]:hover img {
     .nav-center.mini-nav .navbar-toggle {
         float: none;
         margin: 10px auto 0;
-    }
-}
-
-
-
-@media (max-width: 1024px) {
-    .bloc {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .bloc.full-width-bloc,
-    .bloc-tile-2.full-width-bloc .container,
-    .bloc-tile-3.full-width-bloc .container,
-    .bloc-tile-4.full-width-bloc .container {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-
-@media (max-width: 991px) {
-    .container {
-        width: 100%;
-    }
-    .b-parallax {
-        background-attachment: scroll;
-    }
-    .main,
-    #hero-bloc {
-        overflow-x: hidden;
-        position: relative;
-    }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
-    .bloc-group,
-    .bloc-group .bloc {
-        display: block;
-        width: 100%;
-    }
-    .bloc-fill-screen .fill-bloc-top-edge,
-    .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
-}
-
-@media (max-width: 992px) and (min-width: 768px) {
-    .navbar .nav {
-        max-width: 80%
-    }
-    .nav-center.navbar .nav {
-        max-width: 100%
-    }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .b-parallax {
-        background-attachment: scroll;
     }
 }
 
@@ -939,7 +930,7 @@ a[data-lightbox]:hover img {
     }
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
-		border:fixed 2px #000
+		border: 2px solid #000000;
     }
     .dropdown .dropdown a .caret {
         float: none;
@@ -1034,11 +1025,9 @@ a[data-lightbox]:hover img {
         height: 320px;
     }
 	
-	{
     .bloc-mob-center-text {
         text-align: center;
     }
-}
 }
 
 @media (max-width: 400px) {
