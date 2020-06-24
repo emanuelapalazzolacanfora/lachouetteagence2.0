@@ -77,6 +77,9 @@ h1 {
  font-family: "Kingthings Petrock light";
  font-size:1.5em; 
 }
+h1 {
+	margin:0;
+}
 
 .h1:hover {
     color: #575757!important;
