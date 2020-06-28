@@ -192,7 +192,7 @@ bg-center,
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper-min.png");
+    background: url("img/texture-paper-compressor.png");
 }
 
 .b-parallax {
@@ -774,19 +774,19 @@ a[data-lightbox]:hover img {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg-min.png");
+    background-image: url("img/dots-bg-compressor.png");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg-min.png");
+    background-image: url("img/lines-h2-bg-compressor.png");
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere-min.jpg");
+    background-image: url("img/la-chouette-agence-banniere-compressor.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation-min.jpg");
+    background-image: url("img/image-de-presentation-compressor.jpg");
 }
 
 @media (max-width: 1366px) {
