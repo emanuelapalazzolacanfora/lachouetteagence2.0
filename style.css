@@ -13,7 +13,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 	font-family: "helvetica";
     font-weight: 400;
-	font-size:16px;
 	text-align:center;
 }
 
@@ -194,7 +193,6 @@ bg-center,
 
 .texture-paper::before {
     background: url("img/texture-paper-min.png");
-    background-size: 280px 280px;
 }
 
 .b-parallax {
@@ -768,7 +766,7 @@ a[data-lightbox]:hover img {
 }
 
 .bgc-btn:hover{
-    background: #C35421!important;
+    background: #C27956!important;
 }
 
 .bgc-btn:focus{
